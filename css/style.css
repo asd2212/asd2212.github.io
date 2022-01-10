@@ -1,0 +1,22 @@
+body{
+	background-color: black;
+	color:  white; 
+	font-family:'Montserrat', sans-serif; 
+}
+
+
+a{
+	color:  white;
+	
+}
+h1{
+	color:  blue;
+	font-family: 'Luxurious Roman', cursive;
+}
+
+p{
+	font-size:  13px; 
+	font-family: 'Montserrat', sans-serif;
+	color:  #B600FF;
+
+}
