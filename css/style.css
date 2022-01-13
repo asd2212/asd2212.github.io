@@ -1,3 +1,5 @@
+
+
 body{
 	background-color: skyblue;
 	color:  rosybrown; 
@@ -38,6 +40,8 @@ a:hover{
 	padding-right: 20px;
 	justify-content: space-between; /*make sure each element is on either side of container*/
 	position:  relative;
+	background: blue;
+	border: 1px solid black;
 }
 
 
@@ -52,15 +56,12 @@ h1{
 	letter-spacing: 1px; /*1px of space between each letter*/
 	border-radius:  25px;
 	border: 1px solid black;
-	background:  black;
+	background: black;
 	width:  100px;
 	height: 50px;
 	transition: 800ms ease all;
 	margin-top: 25px;
-
-
 }
-
 /*any link inside of resume button*/
 
 .resume-button a{
@@ -82,20 +83,48 @@ h1{
 
 #container{
 	flex-direction: row;
+	display: inline-flex;
 	width: 100%;
-	padding: 2% 7% 0% 7%;
+	padding-left: 20px;
+	padding-right: 20px;
 	height: 50%;
 	background: transparent;
 	border-color: 1px solid black; 
-	display: inline-flex;
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 20px;
 }
 
 
+.profilepic{
+	font-size:  20px; 
+	font-family: 'Times New Roman', Times, serif;
+	color:  black;
+	line-height: 25px;
+	border-radius: 20px;
+	padding: 2% 8% 2% 8%;
+	background-color: yellowgreen;
+	display: block;
+}
+
+.profilepic img{
+	width: auto;
+	height: 100px;
+}
+
+.bio{
+	width: 20%;
+	font-size:  14px; 
+	font-family: 'Times New Roman', Times, serif;
+	color:  black;
+	line-height: 25px;
+	border-radius: 20px;
+	padding: 2% 8% 2% 8%;
+	background-color: yellowgreen;
+}
+
 .column-left{
 	float: left;
-	width: 28%;
+	width: 18%;
 	height: 80%;
 	border-radius: 20px;
 	/*font-size: 14px;*/
@@ -114,7 +143,7 @@ h1{
 }
 
 .column-middle{
-	width:  28%;
+	width:  18%;
 	height: 80%;
 	border-radius: 20px;
 	/*font-size: 14px;*/
@@ -133,8 +162,8 @@ h1{
 
 .column-right{
 	float: right;
-	width:  28%;
-	height:  60%;
+	width:  18%;
+	height:  80%;
 	border-radius: 20px;
 	/*font-size: 14px;*/
 	/*color:  black*/;  /*changes color of text*/
@@ -150,25 +179,21 @@ h1{
 	box-shadow: #D9D9D9;
 	transition: 800ms ease all;
 	border: 1px solid black;
-
 }
 
 
-
 p{
-	font-size:  20px; 
+	font-size:  14px; 
 	font-family: 'Times New Roman', Times, serif;
 	color:  black;
 	line-height: 25px;
-	border-radius: 20px;
-	padding: 2% 8% 2% 8%;
 	background-color: yellowgreen;
 
 }
 
 #bioNlinks{
 	width: 100%;
-	padding:  2% 15% 0% 0%;
+	padding:  2% 2% 0% 0%;
 	align-items: center;
 	margin-top: 100px;
 	border:  1px solid red;
@@ -177,12 +202,14 @@ p{
 
 .bioBox{
 	text-align: left;
-	width: 60%;
+	width: 30%;
 	line-height: 24px;
 	height: auto;
 	flex-grow: 1;
 	margin-bottom: 5%;
+	background: purple;
 }
+
 
 .linkBox{
 	width: 25%;
@@ -199,9 +226,6 @@ p{
 	display: block;
 	text-align: left;
 }
-
-
-
 
 
 }

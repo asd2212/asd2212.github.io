@@ -6,11 +6,10 @@ $(document).ready(function(){
 	var myFavoriteBook = "A Raisin in the Sun"; 
 	console.log("My fav book is: " + myFavoriteBook); 
 
-	window.mousemove = changeBG; 
+	window.onclick = changeBG; 
 
 	function changeBG(){
-		document.getElementsbyTagName("Body")[0].style.BackgroundColor = "#C1E3BO"; 
-		document.getElementsbyTagName("Body")[0].style.color="pink"; 
-
+		document.getElementsByTagName("body")[0].style.backgroundColor ="#C1E3B0"; 
+		document.getElementsByTagName("body")[0].style.color="pink"; 
 	}
 }); 
