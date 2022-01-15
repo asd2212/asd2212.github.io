@@ -1,20 +1,16 @@
 body{
 	background-color: DCCCBB;
-	color:  rosybrown; 
+	color:  black; 
 	font-family:'Helvetica', cursive;
-	font-size: 20px;
+	font-size: 45px;
 	text-align: center;
-	/*
-	background-image: url(../images/background.png);
-	background-position: center top;
-	background-repeat: no-repeat;
-	*/
 	background-width: 100% auto; 
-	padding-left: 10%; 
-	padding-right:10%;
+	padding-left: 0%; 
+	padding-right:5%;
+	max-width: 100%;
+	justify-content: center;
 
 }
-
 
 a{
 	font-family: 'Times New Roman', Times, sans-serif;
@@ -25,20 +21,19 @@ a{
 	line-height: 15.184px;
 }
 
-
 a:hover{
 	color: blue;
 	transition: 800ms ease all;
 }
 
-
 #header{
-	width: 100%;
 	display: flex; 
 	padding-left: 20px;
 	padding-right: 100px;
 	justify-content: space-between; /*make sure each element is on either side of container*/
 	background: transparent;
+	max-width: 100%;
+
 }
 
 
@@ -47,7 +42,6 @@ h1{
 	font-family: 'Cormorant Garamond', serif;
 	font-size: 30px;
 }
-
 
 
 /*create button for resume*/
@@ -59,17 +53,17 @@ h1{
 	background: black;
 	width:  100px;
 	height: 50px;
-	transition: 800ms ease all;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	margin-left: 2%;
 }
 /*any link inside of resume button*/
 
 .resume-button a{
 	color: white;
+	font-family: PlayFairDisplay,serif;
 	font-weight: 400;
 	font-size: 15px;
-
 }
 
 .resume-button a:hover{
@@ -78,8 +72,9 @@ h1{
 	transition: 0ms;
 }
 .resume-button:hover{
-	background:  white;
+	background:  transparent;
 	transition:  800ms ease all;
+	border: 1px solid black;
 }
 
 #container{
@@ -87,7 +82,7 @@ h1{
 	display: flex;
 	column-gap: 20px;
   justify-content: space-between;
-	width: 100%;
+	max-width: 100%;
 	padding-left: 50px;
 	padding-right: 20px;
 	height: 50%;
@@ -99,6 +94,23 @@ h1{
 	padding-right: 100px;
 }
 
+#column{
+	flex-direction: row;
+	display: flex;
+	column-gap: 20px;
+  justify-content: space-between;
+	max-width: 100%;
+	height: 50%;
+	background: transparent;
+	border-color: 1px solid black; 
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 20px;
+	padding-left: 4%;
+	padding-right: 4%;
+	margin-top: 30%;
+	margin-right: 0%; 
+}
+
 .profilepic{
 	line-height: 25px;
 	border-radius: 20px;
@@ -106,23 +118,26 @@ h1{
 }
 
 .profilepic img{
-	padding-top: 20%;
+	padding-top: 0%;
 	max-width: 100%;
-	height: 500px;
+	height: 700px;
+	margin: 10% 36% 0% 30%;
+	border-radius: 0px;
 }
 
 .bio{
-	width: 30%;
+	width: 45%;
 	font-size: 20px; 
 	font-family: 'Times New Roman', Times, serif;
 	color:  black;
-	line-height: 30px;
+	line-height: 50px;
 	border-radius: 20px;
-	background-color: white;
-	padding: 10% 25% 2% -15%; /*top, right, bottom, left*/
-	margin-top: 10%;
-	margin-left: -30%;
+	max-width: 100%;
+	/*padding: 10% 8% 2% -15%; /*top, right, bottom, left*/
+	margin: 10% 0% 2% -80%;
+	padding-right: -60%;	
 }
+
 
 .column-left{
 	float: left;
@@ -133,22 +148,21 @@ h1{
 	padding: 3%;
 	background: transparent;
 	transition: 800ms ease all;
-	border-color: 1px solid black;
-	background-image: url(https://i.pinimg.com/originals/27/40/e5/2740e544b4c039b49946b2e6d232a3a8.gif);
-	background-repeat: no-repeat;
-	background-size: cover;
-	image-resolution: from-image;
+	border: 1px solid black;
+	background-color: C5CBD3;
+
 }
+
 
 .column-left:hover{
 	transform: scale(1.1);
-	transform: rotate(45deg);
 	-webkit-box-shadow:  0px 0px 36px 4px #D9D9D9;
 	box-shadow: #D9D9D9;
 	transition: 800ms ease all;
 	border:  1px solid black;
 	background: transparent;
 }
+
 
 .column-middle{
 	width:  18%;
@@ -157,18 +171,19 @@ h1{
 	/*font-size: 14px;*/
 	padding:  3%;
 	background-image: url(https://i.pinimg.com/originals/3d/a5/bd/3da5bd324729869b1bc492da52633b42.jpg);
-	border-color: 1px solid black;
+	border: 1px solid black;
 }
 
-
 .column-middle:hover{
-	transform: scale(1.01);
-	transform: rotate(45deg);
+	transform: scale(1.1);
 	-webkit-box-shadow:  0px 0px 36px 4px #D9D9D9;
 	box-shadow: #D9D9D9;
 	transition: 800ms ease all;
 	border: 1px solid black;
 	background-image: url(https://i.pinimg.com/originals/27/40/e5/2740e544b4c039b49946b2e6d232a3a8.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	image-resolution: from-image;
 }
 
 .column-right{
@@ -179,17 +194,13 @@ h1{
 	/*font-size: 14px;*/
 	/*color:  black*/;  /*changes color of text*/
 	padding: 3%;
-	border-color: 4px solid black;
-	background-image: url(https://i.pinimg.com/originals/27/40/e5/2740e544b4c039b49946b2e6d232a3a8.gif);
-	background-repeat: no-repeat;
-	background-size: cover;
-	image-resolution: from-image;
+	border: 1px solid black;
+	background-color:C5CBD ;
 }
 
 
 .column-right:hover{
 	transform: scale(1.1);
-	transform: rotate(45deg);
 	-webkit-box-shadow:  0px 0px 36px 4px #D9D9D9;
 	box-shadow: #D9D9D9;
 	transition: 800ms ease all;
@@ -203,9 +214,8 @@ p{
 	color: black;
 	line-height: 25px;
 	max-width: 100%;
-	padding: 2% 2% 0% 0%;
-
-}
+	padding: 2% 2% 0% 0%; /*top, right, bottom, left*/
+	}
 
 p1{
 	font-size: 12px;
@@ -214,50 +224,101 @@ p1{
 	line-height: 10px;
 	width: 75%;
 	text-align: center;
-	padding: 2% 2% 0% 10%;
-
+	padding: 2% 10% 0% 10%;
 }
 
 p2{
 	font-size:  40px; 
 	font-family: 'Times New Roman', Times, serif;
 	color:  black;
-
 }
 
-p3{
-
-}
 
 #bioNlinks{
-	width: 100%;
-	padding:  2% 2% 10% 0%;
-	align-items: center;
+	max-width: 100%;
+	justify-content: center;
 	margin-top: 10%;
-	border:  1px solid red;
-	display: inline-flex;
 	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 .bioBox{
-	text-align: left;
+	text-align: center;
 	width: 30%;
 	line-height: 24px;
 	height: auto;
 	flex-grow: 1;
 	margin-bottom: 5%;
-	background: purple;
 }
-
 
 .linkBox{
 	width: 25%;
 	height: 100px;
-	background-color: blueviolet;
 	text-align: middle;
 	margin-top: -18%;
 	padding-left: 0%;
 }
 
 
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.popup img{
+	padding-top: 50%;
+	max-width: 100%;
+	height: 500px;
+	margin: 50% 30% 0% 30%;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: 8D98A7;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }

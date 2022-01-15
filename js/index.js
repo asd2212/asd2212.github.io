@@ -11,4 +11,12 @@ $(document).ready(function(){
 		document.getElementsByTagName("body")[0].style.backgroundColor ="#C1E3B0"; 
 		document.getElementsByTagName("body")[0].style.color="pink"; 
 	}
+
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
 }); 
+
+

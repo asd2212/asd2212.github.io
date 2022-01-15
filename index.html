@@ -28,26 +28,24 @@
 		<!--Responsive Design-->
 		<meta name ="viewport" content="width=device-width, initial-scale=1.0">
 
-
+		<script>// When the user clicks on <div>, open the popup
+			function myFunction() {
+			  var popup = document.getElementById("myPopup");
+			  popup.classList.toggle("show");
+			}
+		</script>
 
 	</head> 
 
 
 	<body> 
 
-		
-
 		<div id="header">
 			<h1> Ariana Deen</h1> 
-			
-			<button class="resume-button"> <a target= "_blank" href="https://docs.google.com/document/d/1qZdwZ5jT1Bpvz6SGpFhl--WEImXcKNLPq441NUDdDqY/edit">Home</a></button>
+
 
 			<button class="resume-button"> <a target= "_blank" href="https://docs.google.com/document/d/1qZdwZ5jT1Bpvz6SGpFhl--WEImXcKNLPq441NUDdDqY/edit">Resume</a></button>
-
-			<button class= "resume-button"><a target= "_blank" href = "https://linkedin.com/in/ariana-deen-694215223">LinkedIn</a></button>
-
-			<button class="resume-button"> <a target= "_blank" href = "https://www.facebook.com/ariana.deen.98">FaceBook</a></button>
-
+			
 		</div> 
 
 		<div id="container">
@@ -63,32 +61,34 @@
 
 			<div class="bio">
 
-				<p2>Barnard College '25 <br></p2>
+				<p2><u>Barnard College '25 </u> <div class="popup" onclick="myFunction()">♚
+		  			<span class="popuptext" id="myPopup"><a target= "_blank" href="https://www.columbia.edu/">Columbia!</a></span>
+	 		    </div>
+<br>
+	 		</p2>
 				<p> 
-			    ✏️I'm a first-generation first-year undergraduate at <b> Barnard College of Columbia University.</b> I have interests in technology, political science, finance, and economics. I want to work towards a greater goal of creating an inclusive, diverse, and motivational environment where individuals can come to work. I hope to give back to the younger generations by supporting them to pursue their goals and more. I have hopes of working on Wall Street, NASA, and more!
+			    ✏️I'm a first-generation undergraduate at <b> Barnard College of Columbia University.</b> I have interests in technology, political science, finance, and economics. I want to work towards a greater goal of creating an inclusive, diverse, and motivational environment where individuals can pursue their dreams. I hope to give back to the younger generations by supporting them to pursue their goals and more! <br>
+
+			    I want to figure out how I can combine computer science, economics, and political science for majors. I've always dreamt of either working at NASA (or SpaceX) and studying the stars and the worlds beyond us. As I've engaged in JROTC, politics, and other activites, I thought I'd want to be a lawyer. Now at Columbia, I've had the opportunity to participate in JADE. I learned that not everything is ever set in stone, and I have the ability to use technology to bridge my many interests together. 
+			    
 				</p>
 			</div>
+
+
 			
 		</div>
 
 
-		
-		<div id="bioNlinks">
+		<div id="column">
 
-			<!--<div class="bioBox"><a href = "linkedin.com/in/ariana-deen-694215223">LinkedIn</a></div>-->
+			<div class="column-left"> My Interests: <br> -🏐Volleyball <br> -🥋Taekwondo<br> -🥋Jiujitsu <br> -🛍️Shopping <br> -🧭Exploring new places <br> 📜Having political discussions <br> </div>
+			<div class="column-middle">📺 Fav TV Shows: <br>
+				Manifest<br>
+				TVD<br>
+				The Office<br>
 
-			<!--<div class="linkBox">linkBox</div>
-			<div class= "links"><a target= "_blank" href = "linkedin.com/in/ariana-deen-694215223">LinkedIn2</a></div>-->
-
-		</div>
-
-
-		<div id="container">
-
-			<div class="column-left">Hobbies here</div>
-			<div class="column-middle">Currently Listening to</div>
-
-			<div class="column-right">Future ambitions and ideas</div>
+			</div>
+			<div class="column-right">Future ambitions and ideas: <br>I have hopes of working on Wall Street, NASA, and more!</div>
 
 		</div> 
 
@@ -98,10 +98,20 @@
 			<!--<div class="linkBox">linkBox</div>
 			<div class= "links"><a target= "_blank" href = "linkedin.com/in/ariana-deen-694215223">LinkedIn2</a></div>-->
 
-			<p> Contact me! </p>
-			<p1> © 2022 Ariana Deen. All Rights Reserved. </p1>
-
-		</div>
+			 <button class= "resume-button"><a target= "_blank" href = "mailto: asd2212@barnard.edu">Email</a></button>
+			  <button class= "resume-button"><a target= "_blank" href = "https://linkedin.com/in/ariana-deen-694215223">LinkedIn</a></button>
+			  <button class= "resume-button"> <a target= "_blank" href = "https://www.facebook.com/ariana.deen.98">FaceBook</a></button>
+			  <button class= "resume-button"><a target= "_blank" href = "">GroupMe!</a></button>
+				</div>
 	</body> 
 	
+
+	<footer>
+	  <p>   Made by:     Ariana Deen</p>
+
+	<p1> © 2022 Ariana Deen. All Rights Reserved. </p1>
+			
+</footer>
+
+
 </html> 
