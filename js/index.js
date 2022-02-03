@@ -7,10 +7,6 @@ $(document).ready(function(){
 
 	window.onclick = changeBG; 
 
-	function changeBG(){
-		document.getElementsByTagName("body")[0].style.color="pink"; 
-	}
-
 // When the user clicks on <div>, open the popup
 function myFunction() {
   var popup = document.getElementById("myPopup");
