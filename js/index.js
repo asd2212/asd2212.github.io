@@ -8,7 +8,6 @@ $(document).ready(function(){
 	window.onclick = changeBG; 
 
 	function changeBG(){
-		document.getElementsByTagName("body")[0].style.backgroundColor ="#C1E3B0"; 
 		document.getElementsByTagName("body")[0].style.color="pink"; 
 	}
 
