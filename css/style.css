@@ -198,10 +198,7 @@ h2{
 	box-shadow: #D9D9D9;
 	transition: 800ms ease all;
 	border: 1px solid black;
-	background-image: url(https://i.pinimg.com/originals/27/40/e5/2740e544b4c039b49946b2e6d232a3a8.gif);
-	background-repeat: no-repeat;
-	background-size: cover;
-	image-resolution: from-image;
+	background-color: transparent;
 }
 
 .column-right{
