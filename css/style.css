@@ -348,6 +348,22 @@ p3{
 
 }
 
+
+
+@media screen and (min-width: 780px){
+	.full-width-img{ /* this is your id or class name */
+		margin: auto;
+		width:90%;
+
+}
+
+
+@media screen and (min-width: 800px) {
+  .container {
+    margin: 1em 2em;
+  }
+}
+
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
@@ -359,3 +375,5 @@ p3{
   from, to { border-color: transparent }
   50% { border-color: black }
 }
+
+
