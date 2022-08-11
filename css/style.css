@@ -150,7 +150,7 @@ h2{
 	column-gap: 20px;
   justify-content: space-between;
 	max-width: 100%;
-	width: 160px;
+	width: auto;
 	height: 50%;
 	background: transparent;
 	border-color: 1px solid black; 
@@ -165,11 +165,11 @@ h2{
 
 .column-left{
 	float: left;
-	/*width: 18%;*/
-	height: 80%;
+	/*width: 18%;
+	height: 80%;*/
 	border-radius: 20px;
 	/*font-size: 14px;*/
-	padding: 3%;
+	/*padding: 3%;*/
 	background: transparent;
 	transition: 800ms ease all;
 	border: 1px solid black;
@@ -187,10 +187,9 @@ h2{
 
 .column-middle{
 	/*width:  18%;*/
-	height: 80%;
+	/*height: 80%;*/
 	border-radius: 20px;
 	/*font-size: 14px;*/
-	padding:  3%;
 	background-color: C5CBD3;
 	border: 1px solid black;
 }
@@ -207,9 +206,9 @@ h2{
 .column-right{
 	float: right;
 	/*width:  18%;*/
-	height:  80%;
+	/*height:  80%;*/
 	border-radius: 20px;
-	padding: 3%;
+	/*padding: 3%;*/
 	border: 1px solid black;
 	background-color:C5CBD3;
 }
